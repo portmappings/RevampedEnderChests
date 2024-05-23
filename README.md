@@ -1,3 +1,9 @@
 <h1>Revamped Enderchest</h1>
 
-<ul><li>Tiers</li></ul>
+<h2>Features</h2>
+<h3>
+<ul>
+    <li>Unlockable Tiers</li>
+    <li>Enderchest content serialization</li>
+    <li>Completely configurable</li>
+</ul></h3>
