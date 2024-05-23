@@ -1,0 +1,7 @@
+name: RevampedEnderChests
+version: '1.0-SNAPSHOT'
+main: me.portmapping.revampedenderchests.Main
+api-version: '1.20'
+commands:
+  enderchest:
+    aliases: ["ec"]

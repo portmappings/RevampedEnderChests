@@ -1,0 +1,27 @@
+ENDERCHEST:
+  SIZE: 27
+  TITLE: "EnderChest"
+  TIERS:
+    ENABLED: true
+    TIER-SLOTS:
+      TIER-ONE:
+        DISPLAY-NAME: "&c&lTier I"
+        LORE:
+          - "&7&oBuy at store.example.com"
+        SLOT-ONE: 0 #Must not be larger than enderchest size and must be smaller or equal than SLOT-TWO
+        SLOT-TWO: 5 #Must be larger or equal than SLOT-ONE but not larger than enderchest size
+        MATERIAL: RED_STAINED_GLASS_PANE
+        GLOW: true
+        PERMISSION: "enderchest.tier1"
+        ENABLED: true
+      TIER-TWO:
+        DISPLAY-NAME: "Tier II"
+        LORE:
+          - "&7&oBuy at store.example.com"
+        SLOT-ONE: 6 #Must not be larger than enderchest size and must be smaller or equal than SLOT-TWO
+        SLOT-TWO: 7 #Must be larger or equal than SLOT-ONE but not larger than enderchest size
+        MATERIAL: YELLOW_STAINED_GLASS_PANE
+        GLOW: true
+        PERMISSION: "enderchest.tier2"
+        ENABLED: true
+

@@ -1,0 +1,12 @@
+me\portmapping\revampedenderchests\utils\file\ConfigCursor.class
+me\portmapping\revampedenderchests\utils\file\ConfigFile.class
+me\portmapping\revampedenderchests\utils\chat\CC.class
+me\portmapping\revampedenderchests\manager\EnderChestManager.class
+me\portmapping\revampedenderchests\utils\file\Config.class
+me\portmapping\revampedenderchests\object\EnderChest.class
+me\portmapping\revampedenderchests\object\EnderChestOwner.class
+me\portmapping\revampedenderchests\utils\file\FileConfig.class
+me\portmapping\revampedenderchests\listeners\InventoryListener.class
+me\portmapping\revampedenderchests\object\tiers\Tier.class
+me\portmapping\revampedenderchests\Main.class
+me\portmapping\revampedenderchests\commands\EnderChestCommand.class
