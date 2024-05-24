@@ -3,6 +3,7 @@ package me.portmapping.revampedenderchests.manager;
 import lombok.Getter;
 import me.portmapping.revampedenderchests.Main;
 import me.portmapping.revampedenderchests.object.EnderChest;
+import me.portmapping.revampedenderchests.object.EnderChestAdminOwner;
 import me.portmapping.revampedenderchests.object.EnderChestOwner;
 import me.portmapping.revampedenderchests.object.tiers.Tier;
 import me.portmapping.revampedenderchests.utils.chat.CC;
@@ -48,8 +49,8 @@ public class EnderChestManager {
 
     private void load(){
         //Load tiers
-        String path = "ENDERCHEST.TIERS.TIER-SLOTS.";
-        for(String key : settingsConfig.getConfigurationSection("ENDERCHEST.TIERS.TIER-SLOTS").getKeys(false)){
+        String path = "TIERS.TIER-SLOTS.";
+        for(String key : settingsConfig.getConfigurationSection("TIERS.TIER-SLOTS").getKeys(false)){
             Tier tier = new Tier(key,
                             settingsConfig.getString(path+key+".DISPLAY-NAME"),
                             settingsConfig.getStringList(path+key+".LORE"),
@@ -91,6 +92,15 @@ public class EnderChestManager {
     public void openEnderChest(Player player){
         player.openInventory(getEnderChest(player).getInventory());
     }
+
+    public void openEnderChestAdmin(Player admin, Player target){
+        EnderChest enderChest = getEnderChest(target);
+        Inventory adminInventory = Bukkit.createInventory(new EnderChestAdminOwner(),enderChest.getInventory().getSize(),settingsConfig.getString("ENDERCHEST.ADMIN-VIEW-TITLE"));
+        adminInventory.setContents(enderChest.getInventory().getContents());
+        admin.openInventory(adminInventory);
+    }
+
+
     private boolean isLoreSame(List<String> tierLore, List<String> itemLore){
         if(tierLore.size() != itemLore.size()) return false;
         boolean toReturn = true;

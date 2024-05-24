@@ -7,6 +7,7 @@ me\portmapping\revampedenderchests\object\EnderChest.class
 me\portmapping\revampedenderchests\object\EnderChestOwner.class
 me\portmapping\revampedenderchests\utils\file\FileConfig.class
 me\portmapping\revampedenderchests\listeners\InventoryListener.class
+me\portmapping\revampedenderchests\object\EnderChestAdminOwner.class
 me\portmapping\revampedenderchests\object\tiers\Tier.class
 me\portmapping\revampedenderchests\Main.class
 me\portmapping\revampedenderchests\commands\EnderChestCommand.class
